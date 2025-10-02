@@ -2,7 +2,14 @@
 
 ## Overview
 
-This project provides a small Selenium script that logs into Codio, scrapes the course dashboard, and visits each outstanding section so new material is marked as read. While the browser runs headless by default, you can enable a visible session for debugging.
+This project provides a minimal Selenium script that logs into Codio, scrapes the course dashboard, and automatically scrolls through each outstanding section. The tool ensures you stay on each page for more than 5 minutes, which may help with progress tracking, but it does **not** explicitly mark sections as read. 
+
+**This is not an official tool from Codio.**
+**Might violate the terms of service.**
+**Use at your own risk.**
+**It is not guaranteed to work.**
+**You are responsible for your own actions.**
+**It's not for you to cheating on reading time. It's for helping you to learn without manually scrolling.**
 
 ## Limitations
 

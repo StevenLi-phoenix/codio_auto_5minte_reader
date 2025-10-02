@@ -16,7 +16,7 @@ CODIO_URL = "https://codio.com/p/login?nextPath=/home/student%3Fcourse_id%3Da40c
 USERNAME = os.getenv("USERNAME")
 PASSWORD = os.getenv("PASSWORD")
 
-DISPLAY = False
+DISPLAY = True
 
 options = Options()
 if not DISPLAY:
