@@ -178,9 +178,8 @@ def main() -> None:
         checkpoints = json.load(open("checkpoints.json"))
     else:
         checkpoints = {}
-    for i in checkpoints:
-        if checkpoints[i]["completed"]: # if the task is completed and the time is more than 300 seconds, remove it
-            tasks.remove(checkpoints[i])
+    # Remove tasks whose name is in checkpoints and marked completed
+    tasks = [task for task in tasks if not (task["name"] in checkpoints and checkpoints[task["name"]].get("completed"))]
     print(f"Total tasks after removing completed tasks: {len(tasks)}")
     print("--------------------------------")
     for task in tasks:
